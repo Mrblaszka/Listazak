@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
                     android.R.drawable.checkbox_on_background)
 
             val msg3 =
-                getString(R.string.pre_msg2) + " " + getString(
+                getString(R.string.pre_msg3) + " " + getString(
                     if (checkedTextView4.isChecked)
                         R.string.checked
                     else
