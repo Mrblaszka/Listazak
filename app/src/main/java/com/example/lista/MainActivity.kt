@@ -75,14 +75,14 @@ class MainActivity : AppCompatActivity() {
                 else
                     android.R.drawable.checkbox_on_background)
 
-            val msg2 =
+            val msg3 =
                 getString(R.string.pre_msg2) + " " + getString(
                     if (checkedTextView4.isChecked)
                         R.string.checked
                     else
                         R.string.unchecked)
 
-            Toast.makeText(this@MainActivity, msg2,Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@MainActivity, msg3,Toast.LENGTH_SHORT).show()
         }
     }
 }

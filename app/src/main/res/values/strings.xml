@@ -2,6 +2,7 @@
     <string name="app_name">Lista</string>
     <string name="pre_msg">Cukier jest</string>
     <string name="pre_msg2">Mąka jest</string>
+    <string name="pre_msg3">Mąka jest</string>
     <string name="checked">zaznaczony/a</string>
     <string name="unchecked">odznaczony/a</string>
     <string name="checkedTextView">CheckedTextView</string>
