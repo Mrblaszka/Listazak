@@ -62,5 +62,28 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this@MainActivity, msg2,Toast.LENGTH_SHORT).show()
         }
     }
+    private fun CheckedTextView4() {
+        val checkedTextView4 = binding.checkedTextView4
+        checkedTextView4.isChecked = false
+        checkedTextView4.setCheckMarkDrawable(android.R.drawable.checkbox_off_background)
+
+        checkedTextView4.setOnClickListener {
+            checkedTextView4.isChecked = !checkedTextView4.isChecked
+            checkedTextView4.setCheckMarkDrawable(
+                if (checkedTextView4.isChecked)
+                    android.R.drawable.checkbox_off_background
+                else
+                    android.R.drawable.checkbox_on_background)
+
+            val msg2 =
+                getString(R.string.pre_msg2) + " " + getString(
+                    if (checkedTextView4.isChecked)
+                        R.string.checked
+                    else
+                        R.string.unchecked)
+
+            Toast.makeText(this@MainActivity, msg2,Toast.LENGTH_SHORT).show()
+        }
+    }
 }
 
