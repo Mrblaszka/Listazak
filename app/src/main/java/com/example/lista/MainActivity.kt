@@ -17,6 +17,10 @@ class MainActivity : AppCompatActivity() {
 
         setupCheckedTextView()
         setupCheckedTextView3()
+        setupCheckedTextView4()
+        setupCheckedTextView5()
+        setupCheckedTextView6()
+
     }
     private fun setupCheckedTextView() {
         val checkedTextView2 = binding.checkedTextView2
@@ -62,7 +66,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this@MainActivity, msg2,Toast.LENGTH_SHORT).show()
         }
     }
-    private fun CheckedTextView4() {
+    private fun setupCheckedTextView4() {
         val checkedTextView4 = binding.checkedTextView4
         checkedTextView4.isChecked = false
         checkedTextView4.setCheckMarkDrawable(android.R.drawable.checkbox_off_background)
@@ -83,6 +87,52 @@ class MainActivity : AppCompatActivity() {
                         R.string.unchecked)
 
             Toast.makeText(this@MainActivity, msg3,Toast.LENGTH_SHORT).show()
+        }
+    }
+    private fun setupCheckedTextView5() {
+        val checkedTextView5 = binding.checkedTextView5
+        checkedTextView5.isChecked = false
+        checkedTextView5.setCheckMarkDrawable(android.R.drawable.checkbox_off_background)
+
+        checkedTextView5.setOnClickListener {
+            checkedTextView5.isChecked = !checkedTextView5.isChecked
+            checkedTextView5.setCheckMarkDrawable(
+                if (checkedTextView5.isChecked)
+                    android.R.drawable.checkbox_off_background
+                else
+                    android.R.drawable.checkbox_on_background)
+
+            val msg4 =
+                getString(R.string.pre_msg4) + " " + getString(
+                    if (checkedTextView5.isChecked)
+                        R.string.checked
+                    else
+                        R.string.unchecked)
+
+            Toast.makeText(this@MainActivity, msg4,Toast.LENGTH_SHORT).show()
+        }
+    }
+    private fun setupCheckedTextView6() {
+        val checkedTextView6 = binding.checkedTextView6
+        checkedTextView6.isChecked = false
+        checkedTextView6.setCheckMarkDrawable(android.R.drawable.checkbox_off_background)
+
+        checkedTextView6.setOnClickListener {
+            checkedTextView6.isChecked = !checkedTextView6.isChecked
+            checkedTextView6.setCheckMarkDrawable(
+                if (checkedTextView6.isChecked)
+                    android.R.drawable.checkbox_off_background
+                else
+                    android.R.drawable.checkbox_on_background)
+
+            val msg5 =
+                getString(R.string.pre_msg5) + " " + getString(
+                    if (checkedTextView6.isChecked)
+                        R.string.checked
+                    else
+                        R.string.unchecked)
+
+            Toast.makeText(this@MainActivity, msg5,Toast.LENGTH_SHORT).show()
         }
     }
 }

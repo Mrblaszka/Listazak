@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">Lista</string>
-    <string name="pre_msg">Cukier jest</string>
-    <string name="pre_msg2">Mąka jest</string>
-    <string name="pre_msg3">Mąka jest</string>
-    <string name="checked">zaznaczony/a</string>
-    <string name="unchecked">odznaczony/a</string>
+    <string name="pre_msg">Masło</string>
+    <string name="pre_msg2">Cukier</string>
+    <string name="pre_msg3">Mleko</string>
+    <string name="pre_msg4">Herbata</string>
+    <string name="pre_msg5">Chleb</string>
+    <string name="checked">odznaczony/a</string>
+    <string name="unchecked">zaznaczony/a</string>
     <string name="checkedTextView">CheckedTextView</string>
 </resources>
